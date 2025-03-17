@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #3e2203;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.locations-list {
+    list-style: none;
+    padding: 0;
+}
+
+.locations-list a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.locations-list li {
+    padding: 0;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.locations-list li a {
+    padding: 10px;
+    display: block;
+}
+
+.locations-list li:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #5e4e34;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Add these new styles */
+.upload-status {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.success {
+    background-color: #4CAF50;
+    color: white;
+    display: block;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+    display: block;
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: 1rem auto;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.upload-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.delete-button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#videoInput {
+    width: 100%;
+    max-width: 320px;
+    margin: 1rem auto;
+    display: block;
+}
+
+#videoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .video-wrapper {
+        width: 95%;
+        margin: 0.5rem auto;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
